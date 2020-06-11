@@ -1,0 +1,10 @@
+<form [formGroup]="searchForm">
+    <div class="form-row align-items-center">
+        <div class="col-auto m-2">
+          <input type="text" formControlName="userName" class="form-control mb-2" id="inlineFormInput" placeholder="Enter the Username">
+        </div>
+        <div class="col-auto">
+          <button type="submit" [routerLink]="'/user/'+searchForm.value.userName" class="btn btn-primary mb-2">Search</button>
+        </div>
+      </div>
+</form>
